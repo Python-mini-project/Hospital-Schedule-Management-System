@@ -192,3 +192,28 @@ def appointment_details_primaryinput():
             radiologist_schedule.appointmentconfirmed_acknowledgement(timechoice,time)
     
     #Based on choice, appointment goes to either Family physician, Radiologist, or General Surgeon's schedule.
+
+
+
+
+
+
+list = []
+members = int(input("how many patients?"))
+members = members + 1
+print("note : time format : HH:MM")
+for x in range(1 , members):
+    print("enter the name and time of patient" , x)
+    details = input()
+    print("\n")
+    list.append(details)
+print("original list :")
+for x in list:
+    print(x)
+
+number = int(inputs("how many appointments do you want to cancel?"))
+for y in range(number):
+    print("enter the serial number whose appointment you want to cancel")
+    y  = int(input())
+    list.pop(y)
+print(list)
