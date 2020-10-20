@@ -192,3 +192,4 @@ def appointment_details_primaryinput():
             radiologist_schedule.appointmentconfirmed_acknowledgement(timechoice,time)
     
     #Based on choice, appointment goes to either Family physician, Radiologist, or General Surgeon's schedule.
+#test message function
