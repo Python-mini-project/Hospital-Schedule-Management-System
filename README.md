@@ -3,7 +3,7 @@
 
 # Hospital Schedule Management System
 
-###### v1.0-beta.1
+###### v1.1-beta.1
 
 _Developed by **Akash Bagchi, Akshaya Nadathur, Riya Mary Joseph, Sanchitha N G and Shraavya B K** for the Computational Thinking with Python Mini Project at Dayananda Sagar University, Kudlu Gate_
 
