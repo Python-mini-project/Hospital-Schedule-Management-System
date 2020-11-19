@@ -1,6 +1,3 @@
-[Documentation](https://python-mini-project.github.io/Hospital-Schedule-Management-System/)
-
-
 # Hospital Schedule Management System
 
 ###### v1.1-beta.1
