@@ -1,3 +1,4 @@
+
 # Hospital Schedule Management System
 
 ###### v1.1-beta.1
@@ -6,6 +7,19 @@ _Developed by **Akash Bagchi, Akshaya Nadathur, Riya Mary Joseph, Sanchitha N G 
 
 This is a schedule management system designed for modern hospitals to use as a next-day appointment booking and management application, assigning appointments to patients based on their preferences as well as allowing for cancellation and dynamic(automatic) rescheduling.
 Our code employs the implementation of linked lists using classes and methods in python, as well as several python3 modules such as pandas and tkinter to create a fully functioning and intuitive scheduling system with rudimentary GUI.
+
+## Why linked lists?
+
+We chose linked lists over arrays for the following reasons:
+
+1.	A linked list allows sequential access to its elements which is helpful for scheduling and rescheduling system.
+2. Elements can be added to linked list indefinitely whereas an array will get filled or has to be resized. 
+3.	In a linked list, new elements can be stored anywhere in the memory.
+4.	 Elements in linked list can be easily inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored continously in memory whereas removing elements from an array leaves empty spaces that are a waste of computer memory. 
+5.	In case of linked list, a new element is stored at the first free and available memory location, with only a single overhead step of storing the address of memory location in the previous node of linked list. 
+6.	Therefore, operations like insertion and deletion in Linked lists are fast.  
+7.	Linked lists are dynamic and flexible and can expand and contract its size.
+
 
 ## Functionality:
 
@@ -177,7 +191,26 @@ window.title("Hospital Schedule Management System")
 
 We are currently looking into deployment as a web-application.
 
+## Analysis - Patient attendance & dealing with no-shows
 
+The analysis file contains graphical representations of the number of people who did not show up for appointments for a provided hypothetical set of data. The data has been made in a way so as to satisfy research results on the same. For example, research tells us that around 42% of people do not show up to appointments, and our data follows the same as well, along with several other key factors which are looked into in graphical form.
+
+![](https://github.com/Python-mini-project/Hospital-Schedule-Management-System/blob/main/docs/pie.png)
+
+Results:
+As patients who do not maintained scheduled times have a negative impact on patient care, productivity and learning opportunities, it is important to understand why this happens in the first place. Refer to the [full analysis](https://github.com/Python-mini-project/Hospital-Schedule-Management-System/blob/main/analysis_1.ipynb) for a detailed univariate and bivariate using matplot lib and seaborn which explain the factors that affect patients. 
+The main affecting factors turn out to be as follows. People of lower economic status, younger age and unclear schedules are the least likely to show up because they reconsider spending on facilities (eg transport), and do not consider their appointment to be of urgency when personal schedules come in the way. The same goes for people whose appointments are of shorter duration as since it’s a short amount of time, it would be ignored for later. Whereas, if a person were to get a surgery done, he is unlikely to ignore his appointment. 
+
+### Scope for an overbooking system:
+
+While the strategy of overbooking appointments to allow for anticipated non-attendance may be counterproductive for what is supposed to be a scheduling system, it is still a highly recommended try-out. 
+A possible implementation of an overbooking model for scheduling arrivals at a medical facility under no-show behavior, with patients having different no-show probabilities and different weights could be done. The scheduler has to assign the patients to time slots in such a way that she minimizes the expected weighted sum of the patients' waiting times and the doctor's idle time and overtime. We first consider the static problem, where the set of patients to be scheduled and their characteristics are known in advance. We partially characterize the optimal schedule and introduce a new sequencing rule that schedules patients according to a single index that is a function of their characteristics. Then we apply our theoretical results and conclusions from numerical experiments to sequential scheduling procedures. We propose a solution to the sequential scheduling problem, where requests for appointments come in gradually over time and the scheduler has to assign each patient to one of the remaining slots that are available in the schedule for a given day. We find that the no-show rate and patients' heterogeneity have a significant impact on the optimal schedule and should be taken under consideration.
+
+### Other possible enhancements to deal with patient no-shows:
+
+Rather than a hypothetical set of data like in the ‘analysis’ function, it is a better option to take real data of patient characteristics and their attendance details in the future. An exploratory data analysis (EDA) beyond just a univariate/bivariate analysis (which is shown in the project) can be performed on the same, which will provide us with a final set of data to use in building a ‘predictive model’ in Python. This could be using libraries in Python such as Logistic Regression, Random Forest Classifier, Decision Tree, KMeans and many more. Once the models are built, the accuracy of each model could be derived from them, and the best predictive model could be decided upon. 
+The predictive model results could then be used to come up with solutions for the hospital administration to take physical measures to prevent no-shows by patients.
+Another included feature could be a notifying system to remind patients of their confirmed/rescheduled appointments by implementing a Whatsapp API, which is discussed in detail below.
 
 ## Scope for Integration of APIs:
 
