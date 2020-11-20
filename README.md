@@ -10,6 +10,19 @@ _Developed by **Akash Bagchi, Akshaya Nadathur, Riya Mary Joseph, Sanchitha N G 
 This is a schedule management system designed for modern hospitals to use as a next-day appointment booking and management application, assigning appointments to patients based on their preferences as well as allowing for cancellation and dynamic(automatic) rescheduling.
 Our code employs the implementation of linked lists using classes and methods in python, as well as several python3 modules such as pandas and tkinter to create a fully functioning and intuitive scheduling system with rudimentary GUI.
 
+## Why linked lists?
+
+We chose linked lists over arrays for the following reasons:
+
+1.	A linked list allows sequential access to its elements which is helpful for scheduling and rescheduling system.
+2. Elements can be added to linked list indefinitely whereas an array will get filled or has to be resized. 
+3.	In a linked list, new elements can be stored anywhere in the memory.
+4.	 Elements in linked list can be easily inserted or removed without reallocation or reorganization of the entire structure because the data items need not be stored continously in memory whereas removing elements from an array leaves empty spaces that are a waste of computer memory. 
+5.	In case of linked list, a new element is stored at the first free and available memory location, with only a single overhead step of storing the address of memory location in the previous node of linked list. 
+6.	Therefore, operations like insertion and deletion in Linked lists are fast.  
+7.	Linked lists are dynamic and flexible and can expand and contract its size.
+
+
 ## Functionality:
 
 1. Appointment Creation
