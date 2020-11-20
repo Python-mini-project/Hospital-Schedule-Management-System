@@ -200,7 +200,7 @@ The analysis file contains graphical representations of the number of people who
 ![](https://github.com/Python-mini-project/Hospital-Schedule-Management-System/blob/main/docs/pie.png)
 
 Results:
-As patients who do not maintained scheduled times have a negative impact on patient care, productivity and learning opportunities, it is important to understand why this happens in the first place. Refer hyperlink for a detailed univariate and bivariate using matplot lib and seaborn which explain the factors that affect patients. 
+As patients who do not maintained scheduled times have a negative impact on patient care, productivity and learning opportunities, it is important to understand why this happens in the first place. Refer to the [full analysis](https://github.com/Python-mini-project/Hospital-Schedule-Management-System/blob/main/analysis_1.ipynb) for a detailed univariate and bivariate using matplot lib and seaborn which explain the factors that affect patients. 
 The main affecting factors turn out to be as follows. People of lower economic status, younger age and unclear schedules are the least likely to show up because they reconsider spending on facilities (eg transport), and do not consider their appointment to be of urgency when personal schedules come in the way. The same goes for people whose appointments are of shorter duration as since it’s a short amount of time, it would be ignored for later. Whereas, if a person were to get a surgery done, he is unlikely to ignore his appointment. 
 
 ### Scope for an overbooking system:
